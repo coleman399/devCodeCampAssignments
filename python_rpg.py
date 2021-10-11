@@ -49,7 +49,7 @@ def attack(enemy):
         enemy_attack_index = random_element_from_list(enemy['attack name'])
         print(f"{enemy['name']} used {enemy['attack name'][enemy_attack_index]}!")
         hercules['health'] = hercules['health'] - enemy['attack power']
-        print(f"{enemy['name']} deals {enemy['attack power']} to {hercules['name']}")
+        print(f"{enemy['name']} deals {enemy['attack power']} to Hercules")
         if enemy['health'] > 0 and hercules['health'] > 0:
             print(f"{enemy['name']} has {enemy['health']} health left!")
             print(f"{hercules['name']} has {hercules['health']} health left!")
